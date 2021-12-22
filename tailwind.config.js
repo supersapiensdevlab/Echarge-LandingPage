@@ -7,9 +7,11 @@ module.exports = {
         secondary: "#1246B0",
         sectionHeadText: "#484848",
         sectionParaText: "#171717",
+        borderColor: "#484848",
       },
       height: {
         head: "800px",
+        footer: "550px",
       },
     },
   },

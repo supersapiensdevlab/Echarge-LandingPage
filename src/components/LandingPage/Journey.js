@@ -9,7 +9,7 @@ const Journey = () => {
       <div className="w-full h-max pl-48">
         <div className="w-full h-max my-32">
           <h4 className="text-xl mb-2 text-sectionHeadText">The journey</h4>
-          <p className="text-6xl text-sectionParaText">
+          <p className="text-7xl text-sectionParaText">
             It's been a long journey <br />
             since
             <span className="font-bold"> 2017</span>

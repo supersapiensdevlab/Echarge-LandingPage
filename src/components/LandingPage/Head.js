@@ -24,7 +24,7 @@ const Head = () => {
           </svg>
           <p className="text-primary mt-8 text-xl">Scroll down</p>
         </div>
-        <div className="h-20 w-20 fixed bottom-5 right-28 bg-white flex justify-center items-center rounded-full shadow-lg shadow-gray-500">
+        <div className="h-20 w-20 fixed bottom-5 right-28 bg-white flex justify-center items-center rounded-full shadow-lg shadow-gray-800">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-10 w-10 text-secondary"
