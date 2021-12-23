@@ -10,8 +10,9 @@ module.exports = {
         borderColor: "#484848",
       },
       height: {
-        head: "800px",
+        head: "765px",
         footer: "550px",
+        release: "785px",
       },
     },
   },

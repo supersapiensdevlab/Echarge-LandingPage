@@ -19,9 +19,9 @@ const Navbar = () => {
   }
 
   return (
-    <div className="w-full h-24 bg-primary px-16">
+    <div className="w-full h-32 bg-primary px-36">
       <div className="w-full flex justify-between items-center h-full">
-        <img src={logo} className="h-16 w-16"></img>
+        <img src={logo} className="h-14 w-14"></img>
         <div className="flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
