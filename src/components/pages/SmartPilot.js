@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import ChatIcon from "../Chat/ChatIcon";
 import LeftSection from "./Sections/LeftSection";
 import RightFormSection from "./Sections/RightFormSection";
 
@@ -27,6 +28,7 @@ const SmartPilot = () => {
           buttonText="Become a partner"
           labelText="Participating into pilot as"
         />
+        <ChatIcon />
       </div>
     </div>
   );

@@ -9,7 +9,9 @@ const JourneyCard = (props) => {
           <h2 className="text-3xl font-bold text-sectionParaText mb-2">
             {props.value.year}
           </h2>
-          <p className="text-sectionParaText text-lg">{props.value.text}</p>
+          <p className="text-sectionParaText text-lg font-semibold">
+            {props.value.text}
+          </p>
         </div>
       </div>
     </div>

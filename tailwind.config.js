@@ -11,8 +11,10 @@ module.exports = {
       },
       height: {
         head: "765px",
+        lghead: "32.3rem",
         footer: "550px",
         release: "785px",
+        illustration: "440px",
       },
     },
   },

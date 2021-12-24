@@ -18,6 +18,7 @@ const FindUs = () => {
             head="Be a part of alpha release"
             text="Join our discord community to get earlybird benefits"
             buttonText="Join the community"
+            link="/be_alpha"
           />
         </div>
         <div className="w-full h-max flex ">
@@ -26,6 +27,7 @@ const FindUs = () => {
               head="Be a part of smart pilot "
               text="Accelerate your business with sustainable channels"
               buttonText="Become a partner"
+              link="become_smartpilot"
             />
           </div>
           <div className="w-1/2 h-96 ml-5 bg-secondary rounded-lg">
@@ -33,6 +35,7 @@ const FindUs = () => {
               head="Become an investor"
               text="We are looking for an EV enthusiast like you"
               buttonText="Make an offer"
+              link="become_investor"
             />
           </div>
         </div>

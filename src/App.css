@@ -1,1 +1,9 @@
+body {
+  overflow-x: hidden;
+}
 
+#react-burger-menu-btn {
+  height: 5% !important;
+  top: 5% !important;
+  left: 91% !important;
+}

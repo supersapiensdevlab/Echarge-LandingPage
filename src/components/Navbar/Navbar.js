@@ -19,13 +19,15 @@ const Navbar = () => {
   }
 
   return (
-    <div className="w-full h-32 bg-primary px-36">
+    <div className="w-full 2xl:h-32 lg:h-20 bg-primary 2xl:px-36 lg:px-20">
       <div className="w-full flex justify-between items-center h-full">
-        <img src={logo} className="h-14 w-14"></img>
+        <a href="/">
+          <img src={logo} className="2xl:h-14 2xl:w-14 lg:h-10 lg:w-10"></img>
+        </a>
         <div className="flex">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-7 w-7 mr-7"
+            className="2xl:h-7 2xl:w-7 lg:h-5 lg:w-5 2xl:mr-12 lg:mr-6"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -35,140 +37,158 @@ const Navbar = () => {
               clipRule="evenodd"
             />
           </svg>{" "}
-          <div className="h-7 w-7">
+          <div className="2xl:h-7 2xl:w-7 lg:h-5 lg:w-5 ">
             <Menu
-              right
+              right={true}
               customBurgerIcon={<img src={menu} />}
-              width={"360px"}
+              width={window.innerWidth >= "1536" ? "340px" : "240px"}
               isOpen={showOpen}
               onStateChange={isMenuOpen}
-              className={`bg-primary text-secondary -mt-20`}
+              className={`bg-primary text-secondary 2xl:-mt-20 lg:-mt-14`}
             >
               <img
                 src={close}
-                className="h-7 w-7 cursor-pointer absolute right-10 -mt-16"
+                className="2xl:h-7 2xl:w-7 lg:h-5 lg:w-5 cursor-pointer absolute right-10 -mt-16"
                 onClick={handleClose}
               ></img>
-              <div className="w-full px-10">
-                <div className="w-full mt-28 flex flex-col">
-                  <h1 className="text-lg text-sectionHeadText mb-2">Echarge</h1>
+              <div className="w-full 2xl:pl-10 lg:pl-6">
+                <div className="w-full lg:mt-28 flex flex-col">
+                  <h1 className="2xl:text-lg lg:text-xs text-sectionHeadText 2xl:mb-2 lg:mb-1">
+                    Echarge
+                  </h1>
                   <a
                     id="home"
-                    className="menu-item text-sectionParaText font-semibold text-xl my-0.5"
+                    className="menu-item text-sectionParaText font-semibold 2xl:text-xl lg:text-sm 2xl:my-0.5 lg:my-0.25"
                     href="/"
                   >
                     About
                   </a>
                   <a
                     id="about"
-                    className="menu-item text-sectionParaText font-semibold text-xl my-0.5"
+                    className="menu-item text-sectionParaText font-semibold 2xl:text-xl lg:text-sm 2xl:my-0.5 lg:my-0.25"
                     href="/"
                   >
                     Team
                   </a>
                   <a
                     id="contact"
-                    className="menu-item text-sectionParaText font-semibold text-xl my-0.5"
+                    className="menu-item text-sectionParaText font-semibold 2xl:text-xl lg:text-sm 2xl:my-0.5 lg:my-0.25"
                     href="/"
                   >
                     Hirings
                   </a>
                   <a
                     id="contact"
-                    className="menu-item text-sectionParaText font-semibold text-xl my-0.5"
+                    className="menu-item text-sectionParaText font-semibold 2xl:text-xl lg:text-sm 2xl:my-0.5 lg:my-0.25"
                     href="/"
                   >
                     Newsletter
                   </a>
                   <a
                     id="contact"
-                    className="menu-item text-sectionParaText font-semibold text-xl my-0.5"
+                    className="menu-item text-sectionParaText font-semibold 2xl:text-xl lg:text-sm 2xl:my-0.5 lg:my-0.25"
                     href="/"
                   >
                     Contact us
                   </a>
                 </div>
-                <div className="w-full mt-12 flex flex-col">
-                  <h1 className="text-lg text-sectionHeadText mb-2">Join</h1>
+                <div className="w-full 2xl:mt-12 lg:mt-6 flex flex-col">
+                  <h1 className="2xl:text-lg lg:text-xs text-sectionHeadText 2xl:mb-2 lg:mb-1">
+                    Join
+                  </h1>
                   <a
                     id="home"
-                    className="menu-item text-sectionParaText font-semibold text-xl my-0.5"
-                    href="/"
+                    className="menu-item text-sectionParaText font-semibold 2xl:text-xl lg:text-sm 2xl:my-0.5 lg:my-0.25"
+                    href="/be_alpha"
                   >
                     Alpha release
                   </a>
                   <a
                     id="about"
-                    className="menu-item text-sectionParaText font-semibold text-xl my-0.5"
-                    href="/"
+                    className="menu-item text-sectionParaText font-semibold 2xl:text-xl lg:text-sm 2xl:my-0.5 lg:my-0.25"
+                    href="/become_smartpilot"
                   >
                     Become a partner
                   </a>
                   <a
                     id="contact"
-                    className="menu-item text-sectionParaText font-semibold text-xl my-0.5"
-                    href="/"
+                    className="menu-item text-sectionParaText font-semibold 2xl:text-xl lg:text-sm 2xl:my-0.5 lg:my-0.25"
+                    href="/become_investor"
                   >
                     Become an investor
                   </a>
                 </div>
-                <div className="w-full mt-12 flex flex-col">
-                  <h1 className="text-lg text-sectionHeadText mb-2">Support</h1>
+                <div className="w-full 2xl:mt-12 lg:mt-6 flex flex-col">
+                  <h1 className="2xl:text-lg lg:text-xs text-sectionHeadText 2xl:mb-2 lg:mb-1">
+                    Support
+                  </h1>
                   <a
                     id="home"
-                    className="menu-item text-sectionParaText font-semibold text-xl my-0.5"
+                    className="menu-item text-sectionParaText font-semibold 2xl:text-xl lg:text-sm 2xl:my-0.5 lg:my-0.25"
                     href="/"
                   >
                     Site map
                   </a>
                   <a
                     id="about"
-                    className="menu-item text-sectionParaText font-semibold text-xl my-0.5"
+                    className="menu-item text-sectionParaText font-semibold 2xl:text-xl lg:text-sm 2xl:my-0.5 lg:my-0.25"
                     href="/"
                   >
                     Terms and Conditions
                   </a>
                   <a
                     id="contact"
-                    className="menu-item text-sectionParaText font-semibold text-xl my-0.5"
+                    className="menu-item text-sectionParaText font-semibold 2xl:text-xl lg:text-sm 2xl:my-0.5 lg:my-0.25"
                     href="/"
                   >
                     Cookie policy
                   </a>
                   <a
                     id="contact"
-                    className="menu-item text-sectionParaText font-semibold text-xl my-0.5"
+                    className="menu-item text-sectionParaText font-semibold 2xl:text-xl lg:text-sm 2xl:my-0.5 lg:my-0.25"
                     href="/"
                   >
                     Help
                   </a>
                 </div>
-                <div className="flex mt-8">
-                  <div className="h-12 w-12 rounded-full flex justify-center items-center border-2 mr-2 border-borderColor cursor-pointer">
+                <div className="flex 2xl:mt-8 lg:mt-5">
+                  <div className="2xl:h-12 2xl:w-12 lg:h-8 lg:w-8 rounded-full flex justify-center items-center border-2 mr-2 border-borderColor cursor-pointer">
                     <a href="/">
-                      <img src={facebook} className="h-5 w-5"></img>
+                      <img
+                        src={facebook}
+                        className="2xl:h-5 2xl:w-5 lg:h-4 lg:w-4 "
+                      ></img>
                     </a>
                   </div>
-                  <div className="h-12 w-12 rounded-full flex justify-center items-center border-2 mr-2 border-borderColor cursor-pointer">
+                  <div className="2xl:h-12 2xl:w-12 lg:h-8 lg:w-8 rounded-full flex justify-center items-center border-2 mr-2 border-borderColor cursor-pointer">
                     <a href="/">
-                      <img src={twitter} className="h-5 w-5"></img>
+                      <img
+                        src={twitter}
+                        className="2xl:h-5 2xl:w-5 lg:h-4 lg:w-4"
+                      ></img>
                     </a>
                   </div>
-                  <div className="h-12 w-12 rounded-full flex justify-center items-center border-2 mr-2 border-borderColor cursor-pointer">
+                  <div className="2xl:h-12 2xl:w-12 lg:h-8 lg:w-8 rounded-full flex justify-center items-center border-2 mr-2 border-borderColor cursor-pointer">
                     <a href="/">
-                      <img src={instagram} className="h-5 w-5"></img>
+                      <img
+                        src={instagram}
+                        className="2xl:h-5 2xl:w-5 lg:h-4 lg:w-4"
+                      ></img>
                     </a>
                   </div>
-                  <div className="h-12 w-12 rounded-full flex justify-center items-center border-2 mr-2 border-borderColor cursor-pointer">
+                  <div className="2xl:h-12 2xl:w-12 lg:h-8 lg:w-8 rounded-full flex justify-center items-center border-2 mr-2 border-borderColor cursor-pointer">
                     <a href="/">
-                      <img src={linkedin} className="h-5 w-5"></img>
+                      <img
+                        src={linkedin}
+                        className="2xl:h-5 2xl:w-5 lg:h-4 lg:w-4"
+                      ></img>
                     </a>
                   </div>
                 </div>
-                <div className="mt-8">
-                  <p className="text-md text-sectionParaText">
+                <div className="2xl:mt-8 lg:mt-5">
+                  <p className="2xl:text-sm lg:text-xs text-sectionParaText">
                     Designed with love & same passion <br />
-                    &copy; 2021
+                    &copy;2021
                   </p>
                 </div>
               </div>

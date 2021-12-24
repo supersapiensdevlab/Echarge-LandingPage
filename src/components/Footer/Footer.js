@@ -92,21 +92,21 @@ const Footer = () => {
                 <a
                   id="home"
                   className="menu-item text-primary font-semibold text-xl my-1"
-                  href="/"
+                  href="/be_alpha"
                 >
                   Alpha release
                 </a>
                 <a
                   id="about"
                   className="menu-item text-primary font-semibold text-xl my-1"
-                  href="/"
+                  href="/become_smartpilot"
                 >
                   Become a partner
                 </a>
                 <a
                   id="contact"
                   className="menu-item text-primary font-semibold text-xl my-1"
-                  href="/"
+                  href="/become_investor"
                 >
                   Become an investor
                 </a>

@@ -7,7 +7,7 @@ const FindUsCard = (props) => {
         <h1 className="text-5xl text-primary mb-3">{props.head}</h1>
         <p className="text-2xl text-primary mb-10">{props.text}</p>
         <a
-          href="/"
+          href={props.link}
           className="h-14 w-72 text-center font-semibold px-8 pt-3 text-2xl bg-primary text-secondary rounded-lg"
         >
           {props.buttonText}

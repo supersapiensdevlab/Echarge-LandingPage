@@ -4,6 +4,7 @@ import About from "./About";
 import Counter from "./Counter";
 import FindUs from "./FindUs";
 import Head from "./Head";
+import HowItsDone from "./HowItsDone";
 import Journey from "./Journey";
 
 const LandingPage = () => {
@@ -11,6 +12,7 @@ const LandingPage = () => {
     <div>
       <Head />
       <About />
+      <HowItsDone />
       <Journey />
       <Counter />
       <FindUs />

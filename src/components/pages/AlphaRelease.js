@@ -1,4 +1,5 @@
 import React from "react";
+import ChatIcon from "../Chat/ChatIcon";
 import LeftSection from "./Sections/LeftSection";
 
 const AlphaRelease = () => {
@@ -44,13 +45,14 @@ const AlphaRelease = () => {
               </p>
               <button
                 type="submit"
-                className="w-72 py-2 bg-secondary h-12 rounded-lg text-xl mt-8 text-primary font-semibold text-center"
+                className="w-72 py-2 bg-secondary h-14 rounded-lg text-xl mt-8 text-primary font-semibold text-center"
               >
                 Join the community
               </button>
             </form>
           </div>
         </div>
+        <ChatIcon />
       </div>
     </div>
   );

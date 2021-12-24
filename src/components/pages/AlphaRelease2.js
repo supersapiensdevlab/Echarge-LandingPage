@@ -1,4 +1,5 @@
 import React from "react";
+import ChatIcon from "../Chat/ChatIcon";
 import LeftSection from "./Sections/LeftSection";
 import RightSection from "./Sections/RightSection";
 
@@ -23,6 +24,7 @@ const AlphaRelease2 = () => {
           }
           buttonText="Resend the link"
         />
+        <ChatIcon />
       </div>
     </div>
   );
