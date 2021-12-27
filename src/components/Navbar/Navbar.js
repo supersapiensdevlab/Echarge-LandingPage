@@ -19,15 +19,18 @@ const Navbar = () => {
   }
 
   return (
-    <div className="w-full 2xl:h-32 lg:h-20 bg-primary 2xl:px-36 lg:px-20">
+    <div className="w-full 2xl:h-32 lg:h-20 h-20 bg-primary 2xl:px-36 lg:px-20 px-8">
       <div className="w-full flex justify-between items-center h-full">
         <a href="/">
-          <img src={logo} className="2xl:h-14 2xl:w-14 lg:h-10 lg:w-10"></img>
+          <img
+            src={logo}
+            className="2xl:h-14 2xl:w-14 lg:h-10 lg:w-10 h-10 w-10"
+          ></img>
         </a>
-        <div className="flex">
+        <div className="flex mr-2 md:mr-0">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="2xl:h-7 2xl:w-7 lg:h-5 lg:w-5 2xl:mr-12 lg:mr-6"
+            className="2xl:h-7 2xl:w-7 lg:h-5 lg:w-5 h-6 w-6 2xl:mr-12 lg:mr-6 mr-5"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -37,7 +40,7 @@ const Navbar = () => {
               clipRule="evenodd"
             />
           </svg>{" "}
-          <div className="2xl:h-7 2xl:w-7 lg:h-5 lg:w-5 ">
+          <div className="2xl:h-7 2xl:w-7 lg:h-5 lg:w-5 h-6 w-6 ">
             <Menu
               right={true}
               customBurgerIcon={<img src={menu} />}
@@ -152,7 +155,7 @@ const Navbar = () => {
                   </a>
                 </div>
                 <div className="flex 2xl:mt-8 lg:mt-5">
-                  <div className="2xl:h-12 2xl:w-12 lg:h-8 lg:w-8 rounded-full flex justify-center items-center border-2 mr-2 border-borderColor cursor-pointer">
+                  <div className="2xl:h-12 2xl:w-12 lg:h-8 lg:w-8 rounded-full flex justify-center items-center 2xl:border-2 lg:border mr-2 border-borderColor cursor-pointer">
                     <a href="/">
                       <img
                         src={facebook}
@@ -160,7 +163,7 @@ const Navbar = () => {
                       ></img>
                     </a>
                   </div>
-                  <div className="2xl:h-12 2xl:w-12 lg:h-8 lg:w-8 rounded-full flex justify-center items-center border-2 mr-2 border-borderColor cursor-pointer">
+                  <div className="2xl:h-12 2xl:w-12 lg:h-8 lg:w-8 rounded-full flex justify-center items-center 2xl:border-2 lg:border mr-2 border-borderColor cursor-pointer">
                     <a href="/">
                       <img
                         src={twitter}
@@ -168,7 +171,7 @@ const Navbar = () => {
                       ></img>
                     </a>
                   </div>
-                  <div className="2xl:h-12 2xl:w-12 lg:h-8 lg:w-8 rounded-full flex justify-center items-center border-2 mr-2 border-borderColor cursor-pointer">
+                  <div className="2xl:h-12 2xl:w-12 lg:h-8 lg:w-8 rounded-full flex justify-center items-center 2xl:border-2 lg:border mr-2 border-borderColor cursor-pointer">
                     <a href="/">
                       <img
                         src={instagram}
@@ -176,7 +179,7 @@ const Navbar = () => {
                       ></img>
                     </a>
                   </div>
-                  <div className="2xl:h-12 2xl:w-12 lg:h-8 lg:w-8 rounded-full flex justify-center items-center border-2 mr-2 border-borderColor cursor-pointer">
+                  <div className="2xl:h-12 2xl:w-12 lg:h-8 lg:w-8 rounded-full flex justify-center items-center 2xl:border-2 lg:border mr-2 border-borderColor cursor-pointer">
                     <a href="/">
                       <img
                         src={linkedin}

@@ -12,9 +12,10 @@ module.exports = {
       height: {
         head: "765px",
         lghead: "32.3rem",
+        mobilehead: "36rem",
         footer: "550px",
         release: "785px",
-        illustration: "440px",
+        100: "28rem",
       },
     },
   },

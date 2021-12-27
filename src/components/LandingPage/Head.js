@@ -3,17 +3,17 @@ import ChatIcon from "../Chat/ChatIcon";
 
 const Head = () => {
   return (
-    <div className="w-full 2xl:h-head lg:h-lghead bg-secondary ">
-      <div className="w-full h-full flex flex-col justify-center items-center px-20">
-        <p className="2xl:text-8xl lg:text-6xl text-primary">
+    <div className="w-full 2xl:h-head lg:h-lghead h-mobilehead bg-secondary ">
+      <div className="w-full h-full flex flex-col justify-center items-center lg:px-20 pl-10 pr-20 lg:pr-0">
+        <p className="2xl:text-8xl lg:text-6xl text-4xl text-primary">
           Find the most compatible charging <br /> location for your electric
           vehicle <br />
           with optimized mapping
         </p>
-        <div className="flex flex-col items-center absolute 2xl:bottom-28 lg:bottom-14">
+        <div className="flex flex-col items-center absolute 2xl:bottom-28 lg:bottom-14 bottom-10">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="2xl:h-10 2xl:w-10 lg:h-6 lg:w-6 text-primary"
+            className="2xl:h-10 2xl:w-10 lg:h-6 lg:w-6 h-6 w-6 text-primary"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -23,7 +23,7 @@ const Head = () => {
               clipRule="evenodd"
             />
           </svg>
-          <p className="text-primary mt-8 2xl:text-xl lg:text-sm">
+          <p className="text-primary lg:mt-8 mt-3 2xl:text-xl lg:text-sm text-sm">
             Scroll down
           </p>
         </div>
