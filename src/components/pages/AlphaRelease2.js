@@ -6,7 +6,7 @@ import RightSection from "./Sections/RightSection";
 const AlphaRelease2 = () => {
   return (
     <div className="w-full">
-      <div className="w-full h-release px-36 flex">
+      <div className="w-full 2xl:px-36 2xl:h-release lg:h-lgrelease h-mobilerelease lg:px-20 flex flex-col md:flex-row">
         <LeftSection
           head="Be a part of alpha release"
           text="Join our discord community to get early bird benefits"

@@ -15,14 +15,14 @@ const Popup = ({ data, setSelected, getSelected }) => {
     <Listbox value={selectedItem} onChange={setSelectedItem}>
       {({ open }) => (
         <>
-          <div className="mt-2 relative w-1/2 py-0.5 z-50 border-2 border-gray-400 rounded-lg">
-            <Listbox.Button className="relative w-full text-black text-xl bg-white  rounded-lg shadow-sm pl-3 pr-10 py-2 text-left cursor-default focus:outline-none  sm:text-sm lg:text-xs 2xl:text-sm">
+          <div className="2xl:mt-2 lg:mt-2 mt-1 relative md:w-1/2 w-full 2xl:py-0.5 z-50 border-2 border-gray-400 rounded-lg">
+            <Listbox.Button className="relative w-full text-black 2xl:text-xl lg:text-xs bg-white  2xl:rounded-lg lg:rounded-md shadow-sm 2xl:pl-3 lg:pl-1.5 pr-10 2xl:py-2 lg:py-1.5 text-left cursor-default focus:outline-none  sm:text-sm lg:text-xs 2xl:text-sm text-md">
               <span className="flex items-center">
-                <span className="ml-3 block text-base font-bold truncate">
+                <span className="2xl:ml-3 lg:ml-1.5 ml-2 block 2xl:text-base lg:text-sm font-bold truncate">
                   {selectedItem}
                 </span>
               </span>
-              <span className="ml-3 absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
+              <span className="2xl:ml-3 lg:ml-1.5 absolute inset-y-0 right-0 flex items-center pr-2 pointer-events-none">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"
@@ -52,7 +52,7 @@ const Popup = ({ data, setSelected, getSelected }) => {
                     className={({ active }) =>
                       classNames(
                         active ? "text-white bg-secondary" : "dark:text-white",
-                        "cursor-default select-none relative py-2 pl-3 pr-9"
+                        "cursor-default select-none relative py-2 2xl:pl-3 lg:pl-1.5 pr-9"
                       )
                     }
                     value={value}

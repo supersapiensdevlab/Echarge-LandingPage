@@ -8,7 +8,7 @@ const Counter = () => {
       <div className="w-full 2xl:px-48 lg:px-36 px-10 flex md:flex-row flex-col justify-center items-center 2xl:mb-72 lg:mb-36 mb-16">
         <img
           src={image}
-          className="2xl:h-96 2xl:w-96 lg:h-60 lg:w-60 h-60 w-60 2xl:mr-72 lg:mr-36"
+          className="2xl:h-96 2xl:w-96 lg:h-60 lg:w-60 h-60 w-60 2xl:mr-72 lg:mr-36 md:mr-20"
         ></img>
         <div className="flex flex-col mt-8 md:mt-0">
           {window.innerwidth <= "768px" ? (

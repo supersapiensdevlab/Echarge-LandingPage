@@ -3,7 +3,7 @@ import ChatIcon from "../Chat/ChatIcon";
 
 const Head = () => {
   return (
-    <div className="w-full 2xl:h-head lg:h-lghead h-mobilehead bg-secondary ">
+    <div className="w-full bg-secondary " style={{ height: "83vh" }}>
       <div className="w-full h-full flex flex-col justify-center items-center lg:px-20 pl-10 pr-20 lg:pr-0">
         <p className="2xl:text-8xl lg:text-6xl text-4xl text-primary">
           Find the most compatible charging <br /> location for your electric

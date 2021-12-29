@@ -15,6 +15,8 @@ module.exports = {
         mobilehead: "36rem",
         footer: "550px",
         release: "785px",
+        lgrelease: "529px",
+        mobilerelease: "1000px",
         100: "28rem",
       },
     },

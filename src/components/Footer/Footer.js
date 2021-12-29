@@ -65,7 +65,7 @@ const Footer = () => {
           </div>
           <div id="right-section md:w-2/3 w-full">
             <div className="flex flex-col md:flex-row w-full">
-              <div className="flex flex-col 2xl:ml-36 lg:ml-40 mb-8 md:mb-0">
+              <div className="flex flex-col 2xl:ml-36 lg:ml-40 md:ml-16 mb-8 md:mb-0">
                 <h1 className="2xl:text-lg lg:text-xs text-md text-primary 2xl:mb-2 lg:mb-1 mb-1">
                   Echarge
                 </h1>
@@ -105,7 +105,7 @@ const Footer = () => {
                   Contact us
                 </a>
               </div>
-              <div className="flex flex-col 2xl:ml-36 lg:ml-20 mb-8 md:mb-0">
+              <div className="flex flex-col 2xl:ml-36 lg:ml-20 md:ml-7 mb-8 md:mb-0">
                 <h1 className="2xl:text-lg lg:text-xs text-md text-primary 2xl:mb-2 lg:mb-1 mb-1">
                   Join
                 </h1>
@@ -131,7 +131,7 @@ const Footer = () => {
                   Become an investor
                 </a>
               </div>
-              <div className="flex flex-col 2xl:ml-36 lg:ml-20">
+              <div className="flex flex-col 2xl:ml-36 lg:ml-20 md:ml-4">
                 <h1 className="2xl:text-lg lg:text-xs text-md text-primary 2xl:mb-2 lg:mb-1 mb-1">
                   Support
                 </h1>
@@ -199,10 +199,10 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <div className="2xl:ml-36 lg:ml-40 2xl:mt-72 lg:mt-44 mt-6">
+            <div className="2xl:ml-36 lg:ml-40 md:ml-16 2xl:mt-72 lg:mt-44 mt-6">
               <p className="2xl:text-2xl lg:text-md text-primary">
                 Designed with love & same passion{" "}
-                <span className="2xl:ml-48 lg:ml-24">&copy;2021</span>
+                <span className="2xl:ml-48 lg:ml-24 md:ml-4">&copy;2021</span>
               </p>
             </div>
             <div></div>

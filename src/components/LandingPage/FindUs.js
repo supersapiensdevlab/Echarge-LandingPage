@@ -22,7 +22,7 @@ const FindUs = () => {
           />
         </div>
         <div className="w-full h-max flex flex-col md:flex-row ">
-          <div className="w-full md:w-1/2 2xl:h-96 lg:h-72 h-48 2xl:mr-5 lg:mr-2.5 bg-secondary 2xl:rounded-lg lg:rounded-md rounded-lg mb-5 md:mb-0">
+          <div className="w-full md:w-1/2 2xl:h-96 lg:h-72 h-48 2xl:mr-5 lg:mr-2.5 md:mr-2.5 bg-secondary 2xl:rounded-lg lg:rounded-md rounded-lg mb-5 md:mb-0">
             <FindUsCard
               head="Be a part of smart pilot "
               text="Accelerate your business with sustainable channels"
@@ -30,7 +30,7 @@ const FindUs = () => {
               link="become_smartpilot"
             />
           </div>
-          <div className="w-full md:w-1/2 2xl:h-96 lg:h-72 h-48 2xl:ml-5 lg:ml-2.5 bg-secondary 2xl:rounded-lg lg:rounded-md rounded-lg mb-5 md:mb-0">
+          <div className="w-full md:w-1/2 2xl:h-96 lg:h-72 h-48 2xl:ml-5 lg:ml-2.5 md:ml-2.5 bg-secondary 2xl:rounded-lg lg:rounded-md rounded-lg mb-5 md:mb-0">
             <FindUsCard
               head="Become an investor"
               text="We are looking for an EV enthusiast like you"

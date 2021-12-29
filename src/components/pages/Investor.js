@@ -13,7 +13,7 @@ const Investor = () => {
 
   return (
     <div className="w-full">
-      <div className="w-full h-release px-36 flex">
+      <div className="w-full 2xl:px-36 lg:px-20  2xl:h-release lg:h-lgrelease h-mobilerelease  flex flex-col md:flex-row">
         <LeftSection
           head="Become an investor"
           text="Accelerate your business with sustainable channels"
