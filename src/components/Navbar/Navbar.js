@@ -40,14 +40,14 @@ const Navbar = () => {
               clipRule="evenodd"
             />
           </svg>{" "}
-          <div className="2xl:h-7 2xl:w-7 lg:h-5 lg:w-5 h-6 w-6 ">
+          <div className="2xl:h-7 2xl:w-7 lg:h-5 lg:w-5 h-6 w-6">
             <Menu
               right={true}
               customBurgerIcon={<img src={menu} />}
-              width={window.innerWidth >= "1536" ? "340px" : "240px"}
+              width={window.innerWidth >= "1536" ? "475px" : "340px"}
               isOpen={showOpen}
               onStateChange={isMenuOpen}
-              className={`bg-primary text-secondary 2xl:-mt-20 lg:-mt-14 -mt-10`}
+              className={`bg-primary text-secondary 2xl:-mt-20 lg:-mt-12 -mt-10`}
             >
               <img
                 src={close}
@@ -55,7 +55,7 @@ const Navbar = () => {
                 onClick={handleClose}
               ></img>
               <div className="w-full 2xl:pl-10 lg:pl-6 pl-6">
-                <div className="w-full lg:mt-28 mt-10 flex flex-col">
+                <div className="w-full lg:mt-24 2xl:mt-28 mt-10 flex flex-col">
                   <h1 className="2xl:text-lg lg:text-xs text-md text-sectionHeadText 2xl:mb-2 lg:mb-1">
                     Echarge
                   </h1>
@@ -130,7 +130,7 @@ const Navbar = () => {
                     className="menu-item text-sectionParaText font-semibold 2xl:text-xl lg:text-sm text-lg 2xl:my-0.5 lg:my-0.25 my-0.5"
                     href="/"
                   >
-                    Site map
+                    Sitemap
                   </a>
                   <a
                     id="about"
@@ -189,7 +189,7 @@ const Navbar = () => {
                   </div>
                 </div>
                 <div className="2xl:mt-8 lg:mt-5 mt-3">
-                  <p className="2xl:text-sm lg:text-xs text-xs text-sectionParaText">
+                  <p className="2xl:text-lg lg:text-xs text-xs text-sectionParaText">
                     Designed with love & same passion <br />
                     &copy;2021
                   </p>

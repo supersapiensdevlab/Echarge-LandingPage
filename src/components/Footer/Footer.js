@@ -7,7 +7,10 @@ import linkedin from "../../assets/images/linkedinwhite.svg";
 const Footer = () => {
   return (
     <div className="w-full">
-      <div className="w-full h-max bg-secondary 2xl:px-48 lg:px-36 px-10 2xl:py-32 lg:py-16 py-10">
+      <div
+        id="footer"
+        className="w-full h-max bg-secondary 2xl:px-48 lg:px-36 px-10 2xl:py-32 lg:py-16 py-10"
+      >
         <div className="w-full lg:h-96 2xl:h-footer flex flex-col md:flex-row">
           <div id="left-section" className="md:w-1/3 w-full flex flex-col">
             <div className="flex flex-col 2xl:mb-28 lg:mb-14 mb-8">
@@ -140,7 +143,7 @@ const Footer = () => {
                   className="menu-item text-primary font-semibold 2xl:text-xl lg:text-sm 2xl:my-1 lg:my-0.5 my-0.5"
                   href="/"
                 >
-                  Site map
+                  Sitemap
                 </a>
                 <a
                   id="about"

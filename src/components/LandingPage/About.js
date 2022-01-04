@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      offset: 150,
+    });
+  }, []);
+
   return (
     <div className="w-full" id="about">
       <div className="w-full h-max 2xl:px-48 lg:px-36 pl-10 pr-16">
@@ -8,7 +17,10 @@ const About = () => {
           <h4 className="2xl:text-xl lg:text-sm text-sm mb-2 text-sectionHeadText font-semibold opacity-70">
             About
           </h4>
-          <p className="2xl:text-4xl lg:text-2xl text-xl text-sectionParaText font-semibold">
+          <p
+            data-aos="fade-up-left"
+            className="2xl:text-4xl lg:text-2xl text-xl text-sectionParaText font-semibold"
+          >
             <span className="text-secondary font-semibold">E charge</span> is
             India's (SaaS) collaborative EV platform propelled by a mission of
             creating a sustainable business for EV owners & stakeholders while

@@ -11,7 +11,7 @@ const Journey = () => {
           <h4 className="2xl:text-xl lg:text-sm text-sm font-semibold opacity-70 mb-2 text-sectionHeadText">
             The journey
           </h4>
-          <p className="2xl:text-7xl lg:text-5xl text-2xl text-sectionParaText">
+          <p className="2xl:text-5xl lg:text-3xl text-2xl text-sectionParaText">
             It's been a long journey <br />
             since
             <span className="font-bold"> 2017</span>

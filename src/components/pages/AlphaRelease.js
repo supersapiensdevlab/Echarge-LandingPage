@@ -16,7 +16,7 @@ const AlphaRelease = () => {
         <div id="right-section h-full md:w-1/2 w-full">
           <div className="h-full w-full flex flex-col justify-center   2xl:pl-60 lg:pl-32 px-8">
             <h2 className="text-sectionParaText 2xl:text-2xl lg:text-lg text-lg font-bold 2xl:mb-10 lg:mb-5 mb-4 mt-7 md:mt-0">
-              It will take not more than 5 mins
+              It will not take more than 5 mins
             </h2>
             <form action="/" className="w-full">
               <label className="2xl:text-lg lg:text-sm text-md font-semibold">

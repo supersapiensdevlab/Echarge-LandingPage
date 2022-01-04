@@ -1,24 +1,23 @@
 import React, { useState, useEffect } from "react";
 
 const LeftSection = (props) => {
-  const [url, setUrl] = useState("");
-  let hidden;
+  // const [url, setUrl] = useState("");
+  // let hidden;
 
-  // useEffect(() => {
-  //   let param = window.location.href;
-  //   setUrl(param);
-  //   if (url === "http://localhost:3000/smartpilot") {
-  //     hidden = true;
-  //   } else {
-  //     hidden = false;
-  //   }
-  // });
+  // // useEffect(() => {
+  // //   let param = window.location.href;
+  // //   setUrl(param);
+  // //   if (url === "http://localhost:3000/smartpilot") {
+  // //     hidden = true;
+  // //   } else {
+  // //     hidden = false;
+  // //   }
+  // // });
 
   return (
     <div
       id="left-section"
-      className="md:h-full h-1/2 bg-secondary md:w-1/2 w-full flex flex-col justify-center 2xl:px-20 lg:px-12 px-6 "
-      // style={{ hidden: { hidden } }}
+      className="md:h-full h-1/2 bg-secondary md:w-1/2 w-full flex flex-col justify-center 2xl:pl-32 lg:pl-24 px-6 "
     >
       <h1 className="text-primary 2xl:text-5xl lg:text-3xl text-2xl 2xl:mb-4 lg:mb-2 mb-3">
         {props.head}
@@ -27,10 +26,10 @@ const LeftSection = (props) => {
         {props.text}
       </p>
       <div className="flex flex-col">
-        <div className="flex items-center">
+        <div className="flex items-center mb-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="lg:h-4 lg:w-4 h-6 w-6  2xl:mr-3 lg:mr-1.5 mr-2"
+            className="2xl:h-6 2xl:w-6 lg:h-4 lg:w-4 h-6 w-6  2xl:mr-3 lg:mr-1.5 mr-2"
             viewBox="0 0 20 20"
             fill="white"
           >
@@ -44,10 +43,10 @@ const LeftSection = (props) => {
             {props.pt1}
           </p>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center mb-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="lg:h-4 lg:w-4 h-6 w-6  2xl:mr-3 lg:mr-1.5 mr-2"
+            className="2xl:h-6 2xl:w-6 lg:h-4 lg:w-4 h-6 w-6  2xl:mr-3 lg:mr-1.5 mr-2"
             viewBox="0 0 20 20"
             fill="white"
           >
@@ -61,10 +60,10 @@ const LeftSection = (props) => {
             {props.pt2}
           </p>
         </div>
-        <div className="flex items-center">
+        <div className="flex items-center mb-2">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="lg:h-4 lg:w-4 h-6 w-6  2xl:mr-3 lg:mr-1.5 mr-2"
+            className="2xl:h-6 2xl:w-6 lg:h-4 lg:w-4 h-6 w-6  2xl:mr-3 lg:mr-1.5 mr-2"
             viewBox="0 0 20 20"
             fill="white"
           >

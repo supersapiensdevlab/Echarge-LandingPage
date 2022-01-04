@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import image from "../../assets/images/Earth web.png";
 import CountUp from "react-countup";
 
 const Counter = () => {
+  const [track, setTrack] = useState(false);
+
   return (
-    <div className="w-full">
+    <div className="w-full" onMouseOver={() => setTrack(true)}>
       <div className="w-full 2xl:px-48 lg:px-36 px-10 flex md:flex-row flex-col justify-center items-center 2xl:mb-72 lg:mb-36 mb-16">
         <img
           src={image}
@@ -24,7 +26,7 @@ const Counter = () => {
           <div className="flex w-full 2xl:mt-10 lg:mt-5 mt-5">
             <div className="flex flex-col w-1/2 items-start">
               <h2 className="2xl:text-7xl lg:text-5xl text-5xl text-sectionParaText font-bold">
-                <CountUp end={1234} duration={10} />
+                {track ? <CountUp end={1234} duration={7} /> : <>0</>}
               </h2>
               <p className="2xl:text-xl lg:text-sm text-sm text-sectionHeadText 2xl:mt-2 lg:mt-1 mt-1 mt-1">
                 Total EVs
@@ -32,7 +34,7 @@ const Counter = () => {
             </div>
             <div className="flex flex-col 2xl:ml-5 lg:ml-2.5">
               <h2 className="2xl:text-7xl lg:text-5xl text-5xl text-sectionParaText font-bold">
-                <CountUp end={1234} duration={10} />
+                {track ? <CountUp end={1234} duration={7} /> : <>0</>}
               </h2>
               <p className="2xl:text-xl lg:text-sm text-sm text-sectionHeadText 2xl:mt-2 lg:mt-1 mt-1">
                 Total Charges installed
@@ -42,7 +44,7 @@ const Counter = () => {
           <div className="flex w-full 2xl:mt-5 lg:mt-2.5 mt-5">
             <div className="flex flex-col w-1/2 items-start">
               <h2 className="2xl:text-7xl lg:text-5xl text-5xl text-sectionParaText font-bold">
-                <CountUp end={1232} duration={10} />
+                {track ? <CountUp end={1232} duration={7} /> : <>0</>}
               </h2>
               <p className="2xl:text-xl lg:text-sm text-sm  text-sectionHeadText 2xl:mt-2 lg:mt-1 mt-1">
                 Total Kms covered
@@ -50,7 +52,7 @@ const Counter = () => {
             </div>
             <div className="flex flex-col 2xl:ml-5 lg:ml-2.5">
               <h2 className="2xl:text-7xl lg:text-5xl text-5xl text-sectionParaText font-bold">
-                <CountUp end={123} duration={10} />
+                {track ? <CountUp end={123} duration={7} /> : <>0</>}
               </h2>
               <p className="2xl:text-xl lg:text-sm text-sm text-sectionHeadText 2xl:mt-2 lg:mt-1 mt-1 ">
                 Total Carbon saved

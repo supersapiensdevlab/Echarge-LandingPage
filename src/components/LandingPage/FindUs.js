@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect } from "react";
 import FindUsCard from "./Cards/FindUsCard";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const FindUs = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      offset: 300,
+    });
+  }, []);
+
   return (
     <div className="w-full">
       <div className="w-full h-max 2xl:px-48 lg:px-36 px-10">
@@ -9,11 +18,17 @@ const FindUs = () => {
           <h4 className="2xl:text-xl lg:text-sm text-sm font-semibold opacity-70 mb-2 text-sectionHeadText">
             Find us interesting ?
           </h4>
-          <p className="2xl:text-7xl lg:text-5xl text-3xl  text-sectionParaText">
+          <p
+            data-aos="fade-up"
+            className="2xl:text-5xl lg:text-3xl text-2xl  text-sectionParaText"
+          >
             We are on a constant search of <br /> EV enthusiast like you
           </p>
         </div>
-        <div className="w-full 2xl:h-96 lg:h-72 h-48 bg-secondary 2xl:rounded-lg rounded-lg lg:rounded-md 2xl:mb-10 lg:mb-5 mb-5">
+        <div
+          data-aos="fade-up"
+          className="w-full 2xl:h-96 lg:h-72 h-48 bg-secondary 2xl:rounded-lg rounded-lg lg:rounded-md 2xl:mb-10 lg:mb-5 mb-5"
+        >
           <FindUsCard
             head="Be a part of alpha release"
             text="Join our discord community to get earlybird benefits"
@@ -22,7 +37,10 @@ const FindUs = () => {
           />
         </div>
         <div className="w-full h-max flex flex-col md:flex-row ">
-          <div className="w-full md:w-1/2 2xl:h-96 lg:h-72 h-48 2xl:mr-5 lg:mr-2.5 md:mr-2.5 bg-secondary 2xl:rounded-lg lg:rounded-md rounded-lg mb-5 md:mb-0">
+          <div
+            data-aos="fade-up"
+            className="w-full md:w-1/2 2xl:h-96 lg:h-72 h-48 2xl:mr-5 lg:mr-2.5 md:mr-2.5 bg-secondary 2xl:rounded-lg lg:rounded-md rounded-lg mb-5 md:mb-0"
+          >
             <FindUsCard
               head="Be a part of smart pilot "
               text="Accelerate your business with sustainable channels"
@@ -30,7 +48,10 @@ const FindUs = () => {
               link="become_smartpilot"
             />
           </div>
-          <div className="w-full md:w-1/2 2xl:h-96 lg:h-72 h-48 2xl:ml-5 lg:ml-2.5 md:ml-2.5 bg-secondary 2xl:rounded-lg lg:rounded-md rounded-lg mb-5 md:mb-0">
+          <div
+            data-aos="fade-up"
+            className="w-full md:w-1/2 2xl:h-96 lg:h-72 h-48 2xl:ml-5 lg:ml-2.5 md:ml-2.5 bg-secondary 2xl:rounded-lg lg:rounded-md rounded-lg mb-5 md:mb-0"
+          >
             <FindUsCard
               head="Become an investor"
               text="We are looking for an EV enthusiast like you"
@@ -48,7 +69,7 @@ const FindUs = () => {
             <input
               type="text"
               placeholder="Enter your mail ID here "
-              className="2xl:h-14 lg:h-10 h-10 w-full 2xl:px-4 lg:px-2 px-2 2xl:text-lg lg:text-xs py-0 2xl:border-2 lg:border border text-black border-borderColor 2xl:rounded-lg lg:rounded-md rounded-md 2xl:mb-5 lg:mb-3 mb-3 mt-4 md:mt-0"
+              className="2xl:h-14 lg:h-10 h-10 w-full 2xl:px-4 lg:px-2 px-2 2xl:text-xl lg:text-sm py-0 2xl:border-2 lg:border border text-black border-borderColor 2xl:rounded-lg lg:rounded-md rounded-md 2xl:mb-5 lg:mb-3 mb-3 mt-4 md:mt-0"
             />
             <a
               href="/"
