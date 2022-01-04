@@ -5,8 +5,9 @@ import "aos/dist/aos.css";
 const About = () => {
   useEffect(() => {
     AOS.init({
-      duration: 2000,
-      offset: 150,
+      duration: 1000,
+      offset: 50,
+      disable: "mobile",
     });
   }, []);
 
@@ -18,7 +19,7 @@ const About = () => {
             About
           </h4>
           <p
-            data-aos="fade-up-left"
+            data-aos="fade-up"
             className="2xl:text-4xl lg:text-2xl text-xl text-sectionParaText font-semibold"
           >
             <span className="text-secondary font-semibold">E charge</span> is
