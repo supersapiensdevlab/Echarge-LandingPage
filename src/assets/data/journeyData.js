@@ -8,27 +8,62 @@ const data = [
   {
     img: journey1,
     year: "2017",
-    text: "Our founder got an invitation from Govt. of India for research on EV scenario in INDIA",
+    text: (
+      <>
+        Our founder got an
+        <br /> invitation from Govt. of
+        <br /> India for research on
+        <br /> EV scenario in INDIA"
+      </>
+    ),
   },
   {
     img: journey2,
     year: "2018",
-    text: "Our founder teamed up with EV consultants from TATA, Delhi metro to work on a smart pilot",
+    text: (
+      <>
+        Our founder teamed up
+        <br /> with EV consultants from
+        <br /> TATA, Delhi metro to work
+        <br /> on a smart pilot
+      </>
+    ),
   },
   {
     img: journey3,
     year: "2019",
-    text: "Team have meet with more than 60+ EV owners to empathize on end consumer needs",
+    text: (
+      <>
+        Team have meet with
+        <br /> more than 60+ EV owners
+        <br /> to empathize on end
+        <br /> consumer needs
+      </>
+    ),
   },
   {
     img: journey4,
     year: "2020",
-    text: "Joined hands with super talented team from Supersapiens to work on the app concept",
+    text: (
+      <>
+        Joined hands with super
+        <br /> talented team from
+        <br /> Supersapiens to work on
+        <br /> the app concept
+      </>
+    ),
   },
   {
     img: journey5,
     year: "2021",
-    text: "Team is now growing, gearing up for alpha release & actively looking for an expansion",
+    text: (
+      <>
+        Team is now growing,
+        <br /> gearing up for alpha
+        <br /> release & actively looking
+        <br /> for an expansion
+      </>
+    ),
   },
 ];
 

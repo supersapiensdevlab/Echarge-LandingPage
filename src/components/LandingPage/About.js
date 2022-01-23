@@ -18,10 +18,7 @@ const About = () => {
           <h4 className="2xl:text-xl lg:text-sm text-sm mb-2 text-sectionHeadText font-semibold opacity-70">
             About
           </h4>
-          <p
-            data-aos="fade-up"
-            className="2xl:text-4xl lg:text-2xl text-xl text-sectionParaText font-semibold"
-          >
+          <p className="2xl:text-4xl lg:text-2xl text-xl text-sectionParaText font-semibold">
             <span className="text-secondary font-semibold">E charge</span> is
             India's (SaaS) collaborative EV platform propelled by a mission of
             creating a sustainable business for EV owners & stakeholders while

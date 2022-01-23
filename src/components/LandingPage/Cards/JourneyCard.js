@@ -2,8 +2,8 @@ import React from "react";
 
 const JourneyCard = (props) => {
   return (
-    <div>
-      <div className="flex flex-col lg:flex-row mr-5 md:mr-0">
+    <div className="mr-10">
+      <div className="flex flex-col lg:flex-row md:mr-0 w-max">
         <img
           src={props.value.img}
           className="2xl:h-72 2xl:w-72 lg:h-48 lg:w-48 md:h-48 md:w-48 h-72 w-72"

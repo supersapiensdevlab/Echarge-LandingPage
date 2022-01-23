@@ -1,11 +1,14 @@
-import React from "react";
-import Carousel from "react-grid-carousel";
+import React, { useState } from "react";
 import data from "../../assets/data/journeyData";
 import JourneyCard from "./Cards/JourneyCard";
+import Marquee from "react-fast-marquee";
 
 const Journey = () => {
+  const [hover, setHover] = useState(false);
+  const [direction, setDirection] = useState("");
+
   return (
-    <div className="w-full">
+    <div className="w-full ">
       <div className="w-full h-max 2xl:pl-48 lg:pl-36 pl-10">
         <div className="w-full h-max 2xl:my-32 lg:my-16">
           <h4 className="2xl:text-xl lg:text-sm text-sm font-semibold opacity-70 mb-2 text-sectionHeadText">
@@ -17,17 +20,33 @@ const Journey = () => {
             <span className="font-bold"> 2017</span>
           </p>
         </div>
-        <div className="2xl:mt-36 lg:mt-20 mt-16 -ml-2 2xl:mb-72 lg:mb-36 mb-16">
-          <div className="">
-            <Carousel cols={3}>
+        <div className="w-full 2xl:mt-36 lg:mt-20 mt-16 -ml-2 2xl:mb-72 lg:mb-36 mb-16 overflow-scroll">
+          <div className="flex w-full">
+            <div
+              className="w-1/2 h-80"
+              onMouseOver={() => setDirection("right")}
+            ></div>
+            <div
+              className="w-1/2 h-80"
+              onMouseEnter={() => setDirection("left")}
+            ></div>
+          </div>
+          <div
+            className="flex -mt-72"
+            onMouseOver={() => setHover(true)}
+            onMouseOut={() => setHover(false)}
+          >
+            {/* <Carousel cols={3}> */}
+            <Marquee speed={150} gradient={false} play={hover}>
               {data.map((value, i) => {
                 return (
-                  <Carousel.Item key={i}>
-                    <JourneyCard value={value} />
-                  </Carousel.Item>
+                  // <Carousel.Item key={i}>
+                  <JourneyCard value={value} />
+                  // {/* </Carousel.Item> */}
                 );
               })}
-            </Carousel>
+            </Marquee>
+            {/* </Carousel> */}
           </div>
         </div>
       </div>

@@ -26,3 +26,17 @@ body {
 ::-webkit-scrollbar {
   width: 0px;
 }
+
+.scroll-anime:hover {
+  animation: move 4s linear infinite;
+  animation-direction: alternate;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1250px);
+  }
+}
