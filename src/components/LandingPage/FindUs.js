@@ -33,7 +33,7 @@ const FindUs = () => {
             head="Be a part of alpha release"
             text="Join our discord community to get earlybird benefits"
             buttonText="Join the community"
-            link="/be_alpha"
+            link="/become_alpha"
           />
         </div>
         <div className="w-full h-max flex flex-col md:flex-row ">

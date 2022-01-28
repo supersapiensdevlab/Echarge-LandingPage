@@ -15,9 +15,12 @@ const RightSection = (props) => {
         <p className="sectionHeadText font-semibold 2xl:text-xl text-sm lg:text-md opacity-70 text-center">
           {props.text}
         </p>
-        <button className="2xl:w-60 lg:w-40 w-44 rounded-md 2xl:py-2.5 lg:py-1.5 py-1 bg-secondary 2xl:h-12 lg:h-8 h-10 2xl:text-xl lg:text-sm  2xl:mt-10 lg:mt-5 mt-5 text-primary font-semibold text-center">
+        <a
+          href="/"
+          className="2xl:w-60 lg:w-40 w-44 rounded-md 2xl:py-2.5 lg:py-1.5 py-1 bg-secondary 2xl:h-12 lg:h-8 h-10 2xl:text-xl lg:text-sm  2xl:mt-10 lg:mt-5 mt-5 text-primary font-semibold text-center"
+        >
           {props.buttonText}
-        </button>
+        </a>
       </div>
     </div>
   );

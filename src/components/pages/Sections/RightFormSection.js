@@ -1,5 +1,6 @@
 import React from "react";
 import Popup from "../Popup";
+// import emailjs from "emailjs-com";
 
 const RightFormSection = ({
   data,
@@ -8,13 +9,39 @@ const RightFormSection = ({
   buttonText,
   labelText,
 }) => {
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+  //   console.log(e.target.value);
+
+  //   emailjs
+  //     .sendForm(
+  //       "service_4tdfhob",
+  //       "template_z5d1p68",
+  //       e.target,
+  //       "user_VNcIEUAx26aw7EO5t1shc"
+  //     )
+  //     .then(
+  //       (res) => {
+  //         console.log(res);
+  //         if (window.location.href === "/become_smartpilot") {
+  //           window.location.href = "/smartpilot";
+  //         } else {
+  //           window.location.href = "/investor";
+  //         }
+  //       },
+  //       (error) => {
+  //         console.log(error);
+  //       }
+  //     );
+  // };
+
   return (
     <div id="right-section h-full md:w-1/2 w-full">
       <div className="h-full w-full flex flex-col justify-center 2xl:pl-60 lg:pl-32 px-8">
         <h2 className="text-sectionParaText 2xl:text-2xl lg:text-lg text-lg font-bold 2xl:mb-10 lg:mb-5 mb-4 mt-7 md:mt-0">
           It will not take more than 5 mins
         </h2>
-        <form action="/" className="w-full">
+        <form action="/" method="POST" className="w-full">
           <label className="2xl:text-lg lg:text-sm text-md font-semibold">
             Your name
           </label>
@@ -22,11 +49,13 @@ const RightFormSection = ({
             <input
               type="text"
               placeholder="First name"
+              name="first_name"
               className="2xl:w-60 lg:w-40 w-full px-1.5 py-1.5 2xl:px-3 lg:px-1.5 2xl:py-2 lg:py-1 border-2 border-gray-400 rounded-md lg:mr-2 mb-3 md:mb-0"
             />
             <input
               type="text"
               placeholder="Last name"
+              name="last_name"
               className="2xl:w-60 lg:w-40 w-full px-1.5 py-1.5 2xl:px-3 lg:px-1.5 2xl:py-2 lg:py-1 border-2 border-gray-400 rounded-md lg:ml-2 mb-3 md:mb-0"
             />
           </div>
@@ -37,6 +66,7 @@ const RightFormSection = ({
             <input
               type="text"
               placeholder="Abc Pvt ltd"
+              name="company"
               className="w-full px-1.5 py-1.5 2xl:px-3 lg:px-1.5 2xl:py-2 lg:py-1 border-2 border-gray-400 rounded-md lg:mt-2 mt-1"
             />
             <label className="2xl:text-lg lg:text-sm text-md font-semibold 2xl:mt-4 lg:mt-2 mt-3">
@@ -45,6 +75,7 @@ const RightFormSection = ({
             <input
               type="email"
               placeholder="Xyz@abc.com"
+              name="email"
               className="w-full px-1.5 py-1.5 2xl:px-3 lg:px-1.5 2xl:py-2 lg:py-1 border-2 border-gray-400 rounded-md lg:mt-2 mt-1"
             />
             <div className="2xl:mt-4 lg:mt-2 mt-3">

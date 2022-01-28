@@ -17,7 +17,11 @@ function App() {
           <Navbar />
           <Routes>
             <Route exact path="/" element={<LandingPage />}></Route>
-            <Route exact path="/be_alpha" element={<AlphaRelease />}></Route>
+            <Route
+              exact
+              path="/become_alpha"
+              element={<AlphaRelease />}
+            ></Route>
             <Route exact path="/alpha" element={<AlphaRelease2 />}></Route>
             <Route
               exact

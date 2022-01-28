@@ -1,8 +1,31 @@
 import React from "react";
 import ChatIcon from "../Chat/ChatIcon";
 import LeftSection from "./Sections/LeftSection";
+import emailjs from "emailjs-com";
 
 const AlphaRelease = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
+    console.log(e.target.value);
+
+    emailjs
+      .sendForm(
+        "service_4tdfhob",
+        "template_z5d1p68",
+        e.target,
+        "user_VNcIEUAx26aw7EO5t1shc"
+      )
+      .then(
+        (res) => {
+          console.log(res);
+          window.location.href = "/alpha";
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+  };
+
   return (
     <div className="w-full">
       <div className="w-full 2xl:px-36 lg:px-20 2xl:h-release lg:h-lgrelease h-mobilerelease flex flex-col md:flex-row">
@@ -18,18 +41,25 @@ const AlphaRelease = () => {
             <h2 className="text-sectionParaText 2xl:text-2xl lg:text-lg text-lg font-bold 2xl:mb-10 lg:mb-5 mb-4 mt-7 md:mt-0">
               It will not take more than 5 mins
             </h2>
-            <form action="/" className="w-full">
+            <form
+              action="/"
+              onSubmit={sendEmail}
+              method="POST"
+              className="w-full"
+            >
               <label className="2xl:text-lg lg:text-sm text-md font-semibold">
                 Your name
               </label>
               <div className="2xl:mt-2 2xl:mb-4 lg:mt-1 lg:mb-2 mt-1">
                 <input
                   type="text"
+                  name="first_name"
                   placeholder="First name"
                   className="2xl:w-60 lg:w-40 w-full 2xl:px-3 lg:px-1.5 px-1.5 2xl:py-2 lg:py-1 py-1.5 border-2  border-gray-400  rounded-md 2xl:mr-2 lg:mr-2 mb-3 md:mb-0"
                 />
                 <input
                   type="text"
+                  name="last_name"
                   placeholder="Last name"
                   className="2xl:w-60 lg:w-40 w-full 2xl:px-3 lg:px-1.5 px-1.5 2xl:py-2 lg:py-1 py-1.5 border-2  border-gray-400  rounded-md 2xl:ml-2 lg:ml-1 mb-3 md:mb-0"
                 />
@@ -39,6 +69,7 @@ const AlphaRelease = () => {
               </label>
               <input
                 type="email"
+                name="email"
                 placeholder="Xyz@abc.com"
                 className="w-full 2xl:px-3 lg:px-1.5 px-1.5 2xl:py-2 lg:py-1 py-1.5 border-2 border-gray-400 rounded-md 2xl:mt-2 lg:mt-1 mt-1"
               />

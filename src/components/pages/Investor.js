@@ -5,9 +5,10 @@ import RightFormSection from "./Sections/RightFormSection";
 
 const Investor = () => {
   const data = [
-    "Angel (Seed round)",
-    "Angel (Seed round)",
-    "Angel (Seed round)",
+    "Pre seed (Concept/Idea)",
+    "Seed (MVP, Prototypes)    ",
+    "Series A (Product fit)",
+    "Series B (Scale up)",
   ];
   const [selected, setSelected] = useState(data[0]);
 

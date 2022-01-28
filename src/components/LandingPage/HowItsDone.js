@@ -7,7 +7,7 @@ const HowItsDone = () => {
     <div className="w-full">
       <div className="w-full h-max 2xl:px-48 lg:px-36 px-10 flex md:flex-row flex-col ">
         <div className="md:w-1/2 w-full ">
-          <div className="w-full sticky 2xl:top-32 md:top-20 lg:mb-16 mb-6">
+          <div className="w-full md:sticky 2xl:top-32 md:top-20 lg:mb-16 mb-6">
             <p className="2xl:text-xl lg:text-sm text-sm mb-2 text-sectionHeadText font-semibold opacity-70">
               How It's done
             </p>

@@ -5,9 +5,12 @@ import RightFormSection from "./Sections/RightFormSection";
 
 const SmartPilot = () => {
   const data = [
-    "EV charger supplier",
-    "EV charger supplier",
-    "EV charger supplier",
+    "EV charger manufacturer/Supplier",
+    "EV fleet owner",
+    "Amenities partner",
+    "Marketing partner",
+    "Corporate alliance",
+    "Community alliance",
   ];
   const [selected, setSelected] = useState(data[0]);
 

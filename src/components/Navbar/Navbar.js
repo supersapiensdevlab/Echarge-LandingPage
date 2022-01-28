@@ -102,7 +102,7 @@ const Navbar = () => {
                   <a
                     id="home"
                     className="menu-item text-sectionParaText font-semibold 2xl:text-xl lg:text-sm text-lg 2xl:my-0.5 lg:my-0.25 my-0.5"
-                    href="/be_alpha"
+                    href="/become_alpha"
                   >
                     Alpha release
                   </a>

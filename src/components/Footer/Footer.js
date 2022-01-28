@@ -115,7 +115,7 @@ const Footer = () => {
                 <a
                   id="home"
                   className="menu-item text-primary font-semibold 2xl:text-xl lg:text-sm 2xl:my-1 lg:my-0.5 my-0.5"
-                  href="/be_alpha"
+                  href="/become_alpha"
                 >
                   Alpha release
                 </a>
