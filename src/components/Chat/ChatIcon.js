@@ -2,10 +2,10 @@ import React from "react";
 
 const ChatIcon = () => {
   return (
-    <div className="2xl:h-20 2xl:w-20 lg:h-14 lg:w-14 fixed 2xl:bottom-5 lg:bottom-3 2xl:right-28 lg:right-24 bg-white flex justify-center z-10 items-center rounded-full shadow-md shadow-gray-900">
+    <div className="2xl:h-20 2xl:w-20 lg:h-14 lg:w-14 h-14 w-14 fixed 2xl:bottom-5 lg:bottom-3 2xl:right-28 lg:right-24 bottom-4 right-5 bg-white flex justify-center z-10 items-center rounded-full shadow-md shadow-gray-900">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="2xl:h-10 2xl:w-10 lg:h-7 lg:w-7 text-secondary"
+        className="2xl:h-10 2xl:w-10 lg:h-7 lg:w-7 h-7 w-7 text-secondary"
         viewBox="0 0 20 20"
         fill="currentColor"
       >
