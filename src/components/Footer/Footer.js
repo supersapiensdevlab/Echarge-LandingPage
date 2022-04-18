@@ -68,9 +68,9 @@ const Footer = () => {
           </div>
           <div id="right-section md:w-2/3 w-full">
             <div className="flex flex-col md:flex-row w-full">
-              <div className="flex flex-col 2xl:ml-36 lg:ml-40 md:ml-16 mb-8 md:mb-0">
+              <div className="flex flex-col 2xl:ml-36 lg:ml-40 md:ml-16 mb-8 md:mb-0 hidden">
                 <h1 className="2xl:text-lg lg:text-xs text-md text-primary 2xl:mb-2 lg:mb-1 mb-1">
-                  Echarge
+                  Supervolt
                 </h1>
                 <a
                   id="home"
@@ -134,7 +134,7 @@ const Footer = () => {
                   Become an investor
                 </a>
               </div>
-              <div className="flex flex-col 2xl:ml-36 lg:ml-20 md:ml-4">
+              <div className="flex flex-col 2xl:ml-36 lg:ml-20 md:ml-4 hidden">
                 <h1 className="2xl:text-lg lg:text-xs text-md text-primary 2xl:mb-2 lg:mb-1 mb-1">
                   Support
                 </h1>

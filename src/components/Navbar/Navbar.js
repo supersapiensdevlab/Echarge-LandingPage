@@ -27,10 +27,10 @@ const Navbar = () => {
             className="2xl:h-14 2xl:w-14 lg:h-10 lg:w-10 h-10 w-10"
           ></img>
         </a>
-        <div className="flex mr-2 md:mr-0">
+        <div className="flex mr-2 md:mr-0 ">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="2xl:h-7 2xl:w-7 lg:h-5 lg:w-5 h-6 w-6 2xl:mr-12 lg:mr-6 mr-5"
+            className="2xl:h-7 2xl:w-7 lg:h-5 lg:w-5 h-6 w-6 2xl:mr-12 lg:mr-6 mr-5 hidden"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -55,7 +55,7 @@ const Navbar = () => {
                 onClick={handleClose}
               ></img>
               <div className="w-full 2xl:pl-10 lg:pl-6 pl-6">
-                <div className="w-full lg:mt-24 2xl:mt-28 mt-10 flex flex-col">
+                <div className="w-full lg:mt-24 2xl:mt-28 mt-10 flex flex-col hidden">
                   <h1 className="2xl:text-lg lg:text-xs text-md text-sectionHeadText 2xl:mb-2 lg:mb-1">
                     Supervolt
                   </h1>
@@ -121,7 +121,7 @@ const Navbar = () => {
                     Become an investor
                   </a>
                 </div>
-                <div className="w-full 2xl:mt-12 lg:mt-6 mt-3 flex flex-col">
+                <div className="w-full 2xl:mt-12 lg:mt-6 mt-3 flex flex-col hidden">
                   <h1 className="2xl:text-lg lg:text-xs text-md text-sectionHeadText 2xl:mb-2 lg:mb-1">
                     Support
                   </h1>
