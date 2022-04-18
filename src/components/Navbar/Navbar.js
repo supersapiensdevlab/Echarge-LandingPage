@@ -57,7 +57,7 @@ const Navbar = () => {
               <div className="w-full 2xl:pl-10 lg:pl-6 pl-6">
                 <div className="w-full lg:mt-24 2xl:mt-28 mt-10 flex flex-col">
                   <h1 className="2xl:text-lg lg:text-xs text-md text-sectionHeadText 2xl:mb-2 lg:mb-1">
-                    Echarge
+                    Supervolt
                   </h1>
                   <a
                     id="home"

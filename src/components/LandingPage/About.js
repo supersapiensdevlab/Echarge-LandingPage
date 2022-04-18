@@ -20,9 +20,9 @@ const About = () => {
           </h4>
           <p className="2xl:text-4xl lg:text-2xl text-xl text-sectionParaText font-semibold">
             <span className="text-secondary font-semibold">Supervolt</span> is
-            India's (SaaS) collaborative EV platform propelled by a mission of
-            creating a sustainable business for EV owners & stakeholders while
-            equally taking care of the environment.
+            India's first (SaaS) collaborative EV platform propelled by a
+            mission of creating a sustainable business for EV owners &
+            stakeholders while equally taking care of the environment.
           </p>
         </div>
       </div>
