@@ -18,7 +18,7 @@ const Footer = () => {
                 Let's talk
               </h1>
               <h3 className="2xl:text-4xl lg:text-2xl text-2xl text-primary">
-                Connect@Echarge.com
+                Connect@supervolt.app
               </h3>
             </div>
             <div className="flex flex-col 2xl:mb-14 lg:mb-7 mb-8">

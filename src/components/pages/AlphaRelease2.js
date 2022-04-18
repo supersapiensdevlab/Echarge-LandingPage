@@ -10,12 +10,12 @@ const AlphaRelease2 = () => {
         <LeftSection
           head="Be a part of alpha release"
           text="Join our discord community to get early bird benefits"
-          pt1="Get an exclusive E charge token to redeem while charging"
+          pt1="Get an exclusive Supervolt token to redeem while charging"
           pt2="1-month free trial once platform gets launched"
           pt3="Validate our new feature before the official launch"
         />
         <RightSection
-          head="Woohoo! Welcome to the E charge community"
+          head="Woohoo! Welcome to the Supervolt community"
           text={
             <>
               We have mailed you a discord invitation link,
